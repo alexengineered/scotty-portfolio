@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"/>
+    <link rel="icon" type="image/png" href="../resources/img/favicon32x32.png" sizes="32x32"/>
+    <title>Contact Montgomery</title>
+    <link rel="icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,900&display=swap" rel="stylesheet">
+    <meta name="description" content="Demo resume for a recent graduate."/>
+    <link rel="stylesheet" href="../resources/css/base.min-=v6.css"/>
+    <link rel="stylesheet" href="../resources/css/styles.css"/>
+    <script src="../resources/js/modernizr.js"></script>
+    <script src="../resources/js/wfl.js"></script>
+
+
+    <style>
+        html {
+            background: url(../resources/img/noise.jpg);
+            background-repeat: repeat;
+            min-width: 100%;
+        }
+
+        input[type=text], select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #556271;
+        }
+
+        input[type=submit] {
+            width: 30%;
+            background-color: #778798;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #556271;
+        }
+
+        textarea {
+            width: 63%;
+            color: #556271;
+            height: 120px;
+        }
+
+        a.portfolio-link:hover {
+            background: none;
+            color: #7fa1c8 !important;
+        }
+
+        .button1:hover {
+            background-color: #93afc8 !important;
+        }
+
+
+        /*Typing window*/
+
+        @-webkit-keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @-webkit-keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /*Typing animation */
+
+        div.box {
+            width: 90%;
+            height: auto;
+            background-color: #fff;
+            padding: 25px;
+            border: 2px solid #778798;
+            align-content: center
+        }
+
+        p.subject {
+            font-family: bitter, georgia, serif;
+            color: #778798;
+            font-size: 1em;
+        }
+
+        p.email {
+            font-family: bitter, georgia, serif;
+            font-size: 1em;
+            color: #778798;
+            /*border-right: .05em solid black;*/
+            width: 25em;
+            /*margin: .1em 20%;*/
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-animation: typing 7s steps(21, end),
+            blink-caret .5s step-end infinite alternate;
+        }
+
+        @media only screen and (max-width: 350px) {
+            p.email {
+                font-size: .95em;
+            }
+
+            input[type=submit] {
+                width: 70%;
+            }
+
+            div.box {
+                width: 95%;
+                padding: 15px 5px 15px 10px;
+            }
+
+            .wrap {
+                padding: .7em;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div class="new-width"></div>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+<div id="topbar" role="banner">
+    <a class="logo icon-btn current" href="../index.html"><img class="icon-portfolio" src="../resources/img/logo.png"
+                                                               width="60"/><span class="vishid">Home</span></a>
+
+    <a id="nav-trigger" class="icon-btn" href="#nav"><i class="icon-reorder"></i><span
+            class="vishid">Jump to menu</span></a>
+</div>
+
+<div id="page" role="main">
+    <div class="wrap fade-in-contact">
+        <br/>
+        <h4 class="page-title contact-me">Ready when you are!</h4><br/>
+
+        <div><img src="../resources/img/linkedin-pic.png" class="portfolio-linked-pic"></div>
+        <br/>
+        <h5 class="page-title contact-me" style="padding-bottom: 20px ">I'd love to hear from you.</h5><br/>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+        <div class="title mail-me-text">Connect with me on
+            <a href="https://www.linkedin.com/"
+               target="_blank" class="portfolio-link" style="color:#556271;"><strong>LinkedIn.</strong></a>
+            Or drop me a line at <a onclick="copyEmail(event)" class="portfolio-link"
+                                    style="color:#556271; cursor: pointer;"><strong>yourname@gmail.com</strong></a>
+            and I'll get right back to you. <br/><br/>
+            <div id="notification" style="display:none; color: #4a9d5f; margin-top: 10px; font-weight: 500;">
+                ✓ Email address copied!
+            </div>
+        </div>
+        <br/>
+        <div class="title mail-me-text">
+            <a href="../resources/docs/aerospace_resume.pdf">Print a copy of my resume and contact information &nbsp;<img style="width: 40px; display: inline;"
+                                                                                                                                     src="../resources/img/printer.png"></a>
+        </div>
+    </div>
+
+    <aside id="sitemeta">
+
+        <nav id="nav" role="navigation">
+
+            <a class="home-link" href="../index.html">HOME</a>
+
+            <ul class="nav-menu">
+
+                <li><a href="skills.html"><i class="icon-ok"></i>Skills</a></li>
+
+                <li><a href="projects.html"><i class="icon-lightbulb"></i>Projects</a></li>
+
+                <li><a href="testimonials.html"><i class="icon-quote-left"></i>Testimonials</a></li>
+
+                <li><a href="contact-me.html"><i class="icon-envelope"></i>Contact Me</a></li>
+
+            </ul>
+
+            <a id="close-nav" href="#"><i class="icon-remove"></i><span>Back to top</span></a>
+
+        </nav>
+
+    </aside>
+
+    <footer id="footer" class="wrap">
+        <a href="" target="_blank"><img
+                src="../resources/img/linkedin-sm.jpg"></a>
+    </footer>
+</div>
+    <script src="./../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery/jquery-1.8.3.min.html"><\/script>')</script>
+    <script src="../resources/js/plugins.js"></script>
+    <script src="../resources/js/main.js"></script>
+
+
+    <script>
+        function copyEmail(event) {
+            event.preventDefault(); // Prevents default link behavior
+            const email = "yourname@gmail.com";
+            const notification = document.getElementById("notification");
+
+            navigator.clipboard.writeText(email).then(() => {
+                notification.style.display = "block";
+
+                setTimeout(() => {
+                    notification.style.display = "none";
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+
+</html>
